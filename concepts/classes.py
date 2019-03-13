@@ -52,7 +52,7 @@ class Contact:
 class PhoneNumber:
     """A contact may have one or more numbers"""
     def __init__(self, number, number_type=PhoneNumberType.HOME):
-        if valid_phone_number∫(number) is False:
+        if valid_phone_number(number) is False:
             raise TypeError("You entered an invalid phone number")
         self._number = number
         self._number_type = number_type
